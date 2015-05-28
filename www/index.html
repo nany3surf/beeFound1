@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="beefound">
     <head>
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
@@ -66,30 +66,20 @@
 
         <article id="pepe">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-md-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mollis lorem.
-                        Nulla facilisi. Maecenas facilisis erat ut mauris aliquam, et volutpat felis scelerisque.
-                        Pellentesque maximus laoreet molestie.
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mollis lorem.
-                        Nulla facilisi. Maecenas facilisis erat ut mauris aliquam, et volutpat felis scelerisque.
-                        Pellentesque maximus laoreet molestie.
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae mollis lorem.
-                        Nulla facilisi. Maecenas facilisis erat ut mauris aliquam, et volutpat felis scelerisque.
-                        Pellentesque maximus laoreet molestie.
-                    </div>
-                </div>
+                <div class="row" ng-view></div>
             </div>
         </article>
 
-        <script type="text/javascript" src="cordova.js"></script>
+        <script src="cordova.js"></script>
         <script src="js/lib/jquery.2.1.4.min.js"></script>
         <script src="js/lib/bootstrap.min.js"></script>
         <script src="js/lib/jquery.sidr.min.js"></script>
-        <script type="text/javascript" src="js/app.js"></script>
+        <script src="js/lib/angular-animate.min.js"></script>
+        <script src="js/lib/angular-cookies.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/lib/angular-sanitize.min.js"></script>
+        <script src="js/lib/angular-touch.min.js"></script>
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/app.js"></script>
     </body>
 </html>

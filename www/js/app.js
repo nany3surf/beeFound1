@@ -55,6 +55,19 @@ var app = {
                 $.sidr('close', 'sidrNav');
             }
         });
+
+        var beef = angular.module('beefound', []);
+
+        beef.config(function($routeProvider) {
+            $routeProvider.
+                when('/', {
+                    templateUrl:'home.html',
+                    reloadOnSearch: false
+                })
+                .otherwise({
+                    redirectTo: '/'
+                });
+        });
     }
 };
 
