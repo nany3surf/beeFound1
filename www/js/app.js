@@ -31,6 +31,22 @@ var app = {
         $(document).ready(function() {
             app.onDeviceReady();
         });
+
+        var beef = angular.module('beefound', [
+            'ngRoute',
+            'ngCookies'
+        ]);
+
+        beef.config(function($routeProvider) {
+            $routeProvider.
+                when('/', {
+                    templateUrl:'templates/pepe.html',
+                    reloadOnSearch: false
+                })
+                .otherwise({
+                    redirectTo: '/'
+                });
+        });
     },
     // deviceready Event Handler
     //
@@ -56,18 +72,7 @@ var app = {
             }
         });
 
-        var beef = angular.module('beefound', []);
 
-        beef.config(function($routeProvider) {
-            $routeProvider.
-                when('/', {
-                    templateUrl:'home.html',
-                    reloadOnSearch: false
-                })
-                .otherwise({
-                    redirectTo: '/'
-                });
-        });
     }
 };
 
