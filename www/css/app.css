@@ -1,0 +1,28 @@
+.be-gray {
+    color: #cccccc
+}
+.be-black {
+    color: #333333;
+}
+.be-blue {
+    color: #aecde5
+}
+.be-cyan {
+    color: #b6dae1
+}
+.be-yellow {
+    color: #ffd539
+}
+.be-pink {
+    color: #f8b3b5
+}
+.be-green {
+    color: #d9dc53;
+}
+
+h1#logo {
+    margin: 0 auto;
+}
+div#devices {
+    margin-top: 87px;
+}
