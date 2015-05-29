@@ -123,7 +123,8 @@ var app = {
     client_id: '943071059112-ml56hbmgg8uhjam96bjhq66kotbj491a.apps.googleusercontent.com',
     client_secret: 'vVfNlfcgAsY3AwbQBbXntk8P',
     redirect_uri: 'http://localhost',
-    scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.login',
+    /*scope: 'https://www.googleapis.com/auth/userinfo.profile https://www.googleapis.com/auth/calendar https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/plus.login',*/
+    scope: 'https://www.googleapis.com/auth/userinfo.profile',
 
 
     init: function() {
