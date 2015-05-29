@@ -16,59 +16,18 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-var app = {
-    // Application Constructor
-    initialize: function() {
-        this.bindEvents();
-    },
-    // Bind Event Listeners
-    //
-    // Bind any events that are required on startup. Common events are:
-    // 'load', 'deviceready', 'offline', and 'online'.
-    bindEvents: function() {
-        document.addEventListener('deviceready', this.onDeviceReady, false);
+var beef = angular.module('beefound', [
+    'ngRoute',
+    'ngCookies'
+]);
 
-        $(document).ready(function() {
-            app.onDeviceReady();
+beef.config(function($routeProvider) {
+    $routeProvider.
+        when('/', {
+            templateUrl:'templates/pepe.html',
+            reloadOnSearch: false
+        })
+        .otherwise({
+            redirectTo: '/'
         });
-    },
-    // deviceready Event Handler
-    //
-    // The scope of 'this' is the event. In order to call the 'receivedEvent'
-    // function, we must explicitly call 'app.receivedEvent(...);'
-    onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-    },
-    // Update DOM on a Received Event
-    receivedEvent: function(id) {
-        $('.btn-navbar').sidr({
-            name: 'sidrNav',
-            source: '.menu-sdr'
-        });
-
-        $(document).bind('click', function () {
-            $.sidr('close', 'sidrNav');
-        });
-
-        $(window).resize(function() {
-            if ($(document).width() > 580) {
-                $.sidr('close', 'sidrNav');
-            }
-        });
-
-        var beef = angular.module('beefound', []);
-
-        beef.config(function($routeProvider) {
-            $routeProvider.
-                when('/', {
-                    templateUrl:'home.html',
-                    reloadOnSearch: false
-                })
-                .otherwise({
-                    redirectTo: '/'
-                });
-        });
-    }
-};
-
-app.initialize();
+});
