@@ -113,3 +113,35 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+#login a {
+    border-radius: 5px;
+    color: white;
+    background: blue;
+    font-size: larger;
+    padding: 10px 20px;
+}
+
+#login a:active {
+    background: darkblue;
+}
+
+#login p {
+    word-wrap: break-word;
+}
+
+#disconnect a {
+    border-radius: 5px;
+    color: white;
+    background: blue;
+    font-size: larger;
+    padding: 10px 20px;
+}
+
+#disconnect a:active {
+    background: darkblue;
+}
+
+#disconnect p {
+    word-wrap: break-word;
+}
