@@ -1,0 +1,57 @@
+Android:
+	icons (png):
+		ldpi:  36x36 (72 dpi)
+		mdpi:  48x48 (72 dpi)
+		hdpi:  72x72 (72 dpi)
+		xhdpi: 96x96 (72 dpi) 
+		
+	splash screen (png):
+		landscape:
+			splash-land-ldpi:    320x200 (72 dpi)
+			splash-land-mdpi:    480x320 (72 dpi)
+			splash-land-hdpi:    800x480 (72 dpi)
+			splash-land-xhdpi:  1280x720 (72 dpi)
+		portrait:
+			splash-port-ldpi:    200x320 (72 dpi)
+			splash-port-mdpi:    320x480 (72 dpi)
+			splash-port-hdpi:    480x800 (72 dpi)
+			splash-port-xhdpi:  720x1280 (72 dpi)
+		
+		
+IOS:
+	icons (png):
+        icon-small:      29x29 (72 dpi)
+        icon-40:         40x40 (72 dpi)
+        icon-50:         50x50 (72 dpi)
+		icon:            57x57 (72 dpi)
+		icon-small@2x:   58x58 (72 dpi)
+		icon-60:         60x60 (72 dpi)
+		icon-72:         72x72 (72 dpi)
+		icon-76:         76x76 (72 dpi)
+		icon-40@2x:      80x80 (72 dpi)
+		icon-50@2x:    100x100 (72 dpi)
+        icon@2x:       114x114 (72 dpi)
+        icon-60@2x     120x120 (72 dpi)
+        icon-72@2x:    144x144 (72 dpi)
+        icon-76@2x:    152x152 (72 dpi)
+        icon-60@3x:    180x180 (72 dpi)
+
+	splash screen (png):
+		landscape:
+			Default-Landscape~ipad:     1024x768 (72 dpi)
+	     	Default-Landscape-736h:    2208x1242 (72 dpi)
+     		Default-Landscape@2x~ipad: 2048x1536 (72 dpi)
+     		
+		portrait:
+			Default~iphone:              320x480 (72 dpi)
+    		Default@2x~iphone:           640x960 (72 dpi)
+    		Default-568h@2x~iphone:     640x1136 (72 dpi)
+    		Default-667h:               750x1334 (72 dpi)
+    		Default-Portrait~ipad:      768x1024 (72 dpi)
+    		Default-736h:              1242x2208 (72 dpi)
+     		Default-Portrait@2x~ipad:  1536x2048 (72 dpi)
+     	
+     	
+     	
+
+
