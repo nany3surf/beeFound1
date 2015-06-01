@@ -128,7 +128,7 @@ var app = {
 
 
     init: function() {
-        $('#login a').on('click', function() {
+        $(document).on('click', '#login a', function() {
             app.onLoginButtonClick();
         });
 

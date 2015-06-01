@@ -1,26 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.beeva.beefound" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
-    <feature name="InAppBrowser">
-        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
-    </feature>
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
-    <icon density="ldpi" src="resources/android/icons/ldpi.png" />
-    <icon density="mdpi" src="resources/android/icons/mdpi.png" />
-    <icon density="hdpi" src="resources/android/icons/hdpi.png" />
-    <icon density="xhdpi" src="resources/android/icons/xhdpi.png" />
-    <splash density="land-hdpi" src="resources/android/splashscreen/splash-land-hdpi.png" />
-    <splash density="land-ldpi" src="resources/android/splashscreen/splash-land-ldpi.png" />
-    <splash density="land-mdpi" src="resources/android/splashscreen/splash-land-mdpi.png" />
-    <splash density="land-xhdpi" src="resources/android/splashscreen/splash-land-xhdpi.png" />
-    <splash density="port-hdpi" src="resources/android/splashscreen/splash-port-hdpi.png" />
-    <splash density="port-ldpi" src="resources/android/splashscreen/splash-port-ldpi.png" />
-    <splash density="port-mdpi" src="resources/android/splashscreen/splash-port-mdpi.png" />
-    <splash density="port-xhdpi" src="resources/android/splashscreen/splash-port-xhdpi.png" />
+    <icon density="ldpi" src="res/android/icons/ldpi.png" />
+    <icon density="mdpi" src="res/android/icons/mdpi.png" />
+    <icon density="hdpi" src="res/android/icons/hdpi.png" />
+    <splash density="land-hdpi" src="res/android/splashscreen/splash-land-hdpi.png" />
+    <splash density="land-ldpi" src="res/android/splashscreen/splash-land-ldpi.png" />
+    <splash density="land-mdpi" src="res/android/splashscreen/splash-land-mdpi.png" />
+    <splash density="land-xhdpi" src="res/android/splashscreen/splash-land-xhdpi.png" />
+    <splash density="port-hdpi" src="res/android/splashscreen/splash-port-hdpi.png" />
+    <splash density="port-ldpi" src="res/android/splashscreen/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="res/android/splashscreen/splash-port-mdpi.png" />
+    <splash density="port-xhdpi" src="res/android/splashscreen/splash-port-xhdpi.png" />
     <name>BeeFound</name>
     <description>
         BEEFound es una aplicación de búsquedas de empleados de la empresa Beeva.
@@ -36,4 +32,8 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="10000" />
+    <version>1.0.0</version>
+    <icon density="xhdpi" src="res/android/icons/xhdpi.png" />
 </widget>
