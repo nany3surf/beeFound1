@@ -32,21 +32,67 @@ var app = {
             app.onDeviceReady();
         });
 
+        /*
         var beef = angular.module('beefound', [
             'ngRoute',
-            'ngCookies'
+            'ngCookies',
+            'ngTweets',
+            'ngSanitize',
         ]);
+        */
+
+        var beef = angular.module('beefound', [
+            'ngRoute',
+            'ngCookies' ,
+            'oc.lazyLoad'
+        ]);
+
 
         beef.config(function($routeProvider) {
             $routeProvider.
                 when('/', {
                     templateUrl:'templates/pepe.html',
-                    reloadOnSearch: false
+                    reloadOnSearch: false,
+                    controller : 'homeController'
+                })
+                .when('/tweets', {
+                    templateUrl:'templates/tweets.html',
+                    controller : 'tweetsController'
+
                 })
                 .otherwise({
                     redirectTo: '/'
                 });
+
         });
+
+        // Controlador
+        beef.controller('tweetsController' , function($scope, $ocLazyLoad) {
+
+            $ocLazyLoad.load("js/lib/twitter-timeline.js")
+                .then(function() {
+                        console.log('twitter-timeline.js Cargado');
+                }, function(e) {
+                        console.log('Error, twitter-timeline.js no cargado');
+                        console.error(e);
+                });
+
+            // Redimensionamos widget
+            angular.element(document).ready(function() {
+                setInterval(function() {
+                    $('iframe#twitter-widget-0').removeAttr('height');
+                    $('iframe#twitter-widget-0').css({'width': '100%' , 'height' : '480'});
+                } , 0);
+
+            });
+
+        });
+
+
+        beef.controller('homeController' , function($scope) {
+
+        });
+
     },
     // deviceready Event Handler
     //
