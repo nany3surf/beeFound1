@@ -24,7 +24,7 @@ var beef = angular.module('beefound', [
 beef.config(function($routeProvider) {
     $routeProvider.
         when('/', {
-            templateUrl:'templates/pepe.html',
+            templateUrl:'templates/login.html',
             reloadOnSearch: false
         })
         .otherwise({
