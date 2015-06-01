@@ -9,12 +9,24 @@
         <param name="onload" value="true" />
     </feature>
     <allow-intent href="market:*" />
+    <icon density="ldpi" src="resources/android/icons/ldpi.png" />
+    <icon density="mdpi" src="resources/android/icons/mdpi.png" />
+    <icon density="hdpi" src="resources/android/icons/hdpi.png" />
+    <icon density="xhdpi" src="resources/android/icons/xhdpi.png" />
+    <splash density="land-hdpi" src="resources/android/splashscreen/splash-land-hdpi.png" />
+    <splash density="land-ldpi" src="resources/android/splashscreen/splash-land-ldpi.png" />
+    <splash density="land-mdpi" src="resources/android/splashscreen/splash-land-mdpi.png" />
+    <splash density="land-xhdpi" src="resources/android/splashscreen/splash-land-xhdpi.png" />
+    <splash density="port-hdpi" src="resources/android/splashscreen/splash-port-hdpi.png" />
+    <splash density="port-ldpi" src="resources/android/splashscreen/splash-port-ldpi.png" />
+    <splash density="port-mdpi" src="resources/android/splashscreen/splash-port-mdpi.png" />
+    <splash density="port-xhdpi" src="resources/android/splashscreen/splash-port-xhdpi.png" />
     <name>BeeFound</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        BEEFound es una aplicación de búsquedas de empleados de la empresa Beeva.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="beefound.team@beeva.com" href="http://www.beeva.com">
+        BEEFOund Team
     </author>
     <content src="index.html" />
     <access origin="*" />

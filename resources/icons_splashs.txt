@@ -1,0 +1,58 @@
+Android:
+    icons (png):
+        ldpi:  36x36 (72 dpi) OK
+        mdpi:  48x48 (72 dpi) OK
+        hdpi:  72x72 (72 dpi) OK
+        xhdpi: 96x96 (72 dpi) OK
+		
+    splash screen (png):
+        landscape:
+            splash-land-ldpi:    320x200 (72 dpi) OK
+            splash-land-mdpi:    480x320 (72 dpi) OK
+            splash-land-hdpi:    800x480 (72 dpi) OK
+            splash-land-xhdpi:  1280x720 (72 dpi) OK
+        portrait:
+            splash-port-ldpi:    200x320 (72 dpi) OK
+            splash-port-mdpi:    320x480 (72 dpi) OK
+            splash-port-hdpi:    480x800 (72 dpi) OK
+            splash-port-xhdpi:  720x1280 (72 dpi) OK
+
+
+IOS:
+    icons (png):
+        icon-small:      29x29 (72 dpi) OK
+        icon-40:         40x40 (72 dpi) OK
+        icon-50:         50x50 (72 dpi) OK
+        icon:            57x57 (72 dpi) OK
+        icon-small@2x:   58x58 (72 dpi) OK
+        icon-60:         60x60 (72 dpi) OK
+        icon-72:         72x72 (72 dpi) OK
+        icon-76:         76x76 (72 dpi) OK
+        icon-40@2x:      80x80 (72 dpi) OK
+        icon-50@2x:    100x100 (72 dpi) OK
+        icon@2x:       114x114 (72 dpi) OK
+        icon-60@2x     120x120 (72 dpi) OK
+        icon-72@2x:    144x144 (72 dpi) OK
+        icon-76@2x:    152x152 (72 dpi) OK
+        icon-60@3x:    180x180 (72 dpi) OK
+
+    splash screen (png):
+        landscape:
+            Default-Landscape~ipad:     1024x768 (72 dpi) OK
+            Default-Landscape-736h:    2208x1242 (72 dpi) OK
+            Default-Landscape@2x~ipad: 2048x1536 (72 dpi) OK
+        portrait:
+            Default~iphone:              320x480 (72 dpi) OK
+            Default@2x~iphone:           640x960 (72 dpi) OK
+            Default-568h@2x~iphone:     640x1136 (72 dpi) OK
+            Default-667h:               750x1334 (72 dpi) OK
+            Default-Portrait~ipad:      768x1024 (72 dpi) OK
+            Default-736h:              1242x2208 (72 dpi) OK
+            Default-Portrait@2x~ipad:  1536x2048 (72 dpi) OK
+
+
+Background: 
+    Top:    #d9db7d
+    Bottom: #d9dc53
+
+
