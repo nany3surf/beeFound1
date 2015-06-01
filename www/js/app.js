@@ -32,15 +32,6 @@ var app = {
             app.onDeviceReady();
         });
 
-        /*
-        var beef = angular.module('beefound', [
-            'ngRoute',
-            'ngCookies',
-            'ngTweets',
-            'ngSanitize',
-        ]);
-        */
-
         var beef = angular.module('beefound', [
             'ngRoute',
             'ngCookies' ,
