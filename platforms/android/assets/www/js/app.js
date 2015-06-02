@@ -25,9 +25,13 @@ beef.config(function($routeProvider) {
     $routeProvider.
         when('/', {
             templateUrl:'templates/login.html',
+            controller: 'homeLogin',
             reloadOnSearch: false
         })
         .otherwise({
             redirectTo: '/'
         });
+});
+
+beef.controller('homeLogin', function($scope) {
 });

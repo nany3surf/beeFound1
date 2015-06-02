@@ -128,7 +128,7 @@ var app = {
 
 
     init: function() {
-        $('#login a').on('click', function() {
+        $(document).on('click', '#login a', function() {
             app.onLoginButtonClick();
         });
 
@@ -259,6 +259,15 @@ var app = {
         $(window).resize(function() {
             if ($(document).width() > 580) {
                 $.sidr('close', 'sidrNav');
+            }
+        });
+
+        $(window).swipe({
+            swipeLeft: function() {
+                $.sidr('close', 'sidrNav');
+            },
+            swipeRight: function() {
+                $.sidr('open', 'sidrNav');
             }
         });
     }

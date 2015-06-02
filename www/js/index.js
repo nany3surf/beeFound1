@@ -261,6 +261,15 @@ var app = {
                 $.sidr('close', 'sidrNav');
             }
         });
+
+        $(window).swipe({
+            swipeLeft: function() {
+                $.sidr('close', 'sidrNav');
+            },
+            swipeRight: function() {
+                $.sidr('open', 'sidrNav');
+            }
+        });
     }
 };
 
