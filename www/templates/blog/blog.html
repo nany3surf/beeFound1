@@ -1,0 +1,9 @@
+<section ng-controller="blogController">
+    <h1>Posts del blog</h1>
+    <hr/>
+    <ul class="list-unstyled">
+        <li ng-repeat="blog in blogs">
+            <a href="#/blog/{{blog.slug}}" title="{{blog.title}}">{{blog.title}}</a>
+        </li>
+    </ul>
+</section>

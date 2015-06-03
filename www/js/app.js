@@ -2,7 +2,8 @@ var beef = angular.module('beefound', [
     'ngRoute',
     'BEEFound.services.Users',
     'tweetsController',
-    'finderController'
+    'finderController',
+    'blogController'
 ]);
 
 
@@ -26,6 +27,14 @@ beef.config(function($routeProvider) {
         .when('/twitter', {
             templateUrl:'templates/twitter/tweets.html',
             controller : 'tweetsController'
+        })
+        .when('/blog', {
+            templateUrl:'templates/blog/blog.html',
+            controller : 'blogController'
+        })
+        .when('/blog/:slug', {
+            templateUrl:'templates/blog/blog_content.html',
+            controller : 'blogContentController'
         })
         .otherwise({
             redirectTo: '/finder'

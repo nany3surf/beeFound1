@@ -1,0 +1,24 @@
+[
+  {
+    "id" : "1",
+    "url" : "http://www.beeva.com/beeva-view/ahora-en-beeva/asi-ha-sido-2014-para-beeva/",
+    "title" : "Así ha sido 2014 para BEEVA",
+    "author" : "BEEVA",
+    "slug" : "asi-ha-sido-2014-para-beeva",
+    "image" : "http://www.beeva.com/wp-content/uploads/2014/12/xmas-2014-2015.jpg",
+    "date" : "2014-12-23T16:26:04+00:00",
+    "content" : "Es imposible que os resumamos en unas líneas todo este año en BEEVA, pero hemos conseguido sacar los 10 hitos más significativos que hemos vivido en este año que acaba."
+
+  },
+  {
+    "id" : "2",
+    "url" : "http://www.beeva.com/beeva-view/productividad-empresa/lifelong-learning-o-aprendizaje-continuo-traves-de-moocs/",
+    "title" : "Lifelong learning o aprendizaje continuo a través de MOOCs",
+    "author" : "Susana Montero",
+    "slug" : "lifelong-learning",
+    "image" : "http://www.beeva.com/wp-content/uploads/2015/06/BEEVA-moocs-it.jpg",
+    "date" : "2015-06-01T11:09:14+00:00",
+    "content" : "No cabe duda que el aprendizaje continuo debe ser parte integral de nuestra actividad profesional como de nuestra vida y, en particular, en nuestra área de trabajo donde la adopción y aplicación de nuevas tecnologías va cada vez a mayor velocidad."
+
+  }
+]
