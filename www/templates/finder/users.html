@@ -4,26 +4,9 @@
         <form class="form-horizontal" role="form">
             <div class="form-group">
                 <tr>
-                    <!--Buscar por nombre-->
                     <td>
                         <label for="input1" class="col-sm-4 control-label">Usuarios</label>
-                        <input type="text" class="form-control" id="input1" ng-model="filterUs" placeholder="Search...">
-                    </td>
-                    <!-- Buscar por proyecto -->
-                    <td>
-                        <label for="input2" class="col-sm-4 control-label">Proyecto Actual</label>
-                        <select id="input2" class="form-control" ng-model="filterUs.user.proyects"><!--filterUs.proyects[0].name-->
-                            <option value="">Todos los proyectos</option>
-                            <option ng-repeat="item in proyectos" value="{{item.id}}">{{item.name}}</option>
-                        </select>
-                    </td>
-                    <!-- Buscar por rol -->
-                    <td>
-                        <label for="input3" class="col-sm-4 control-label">Rol</label>
-                        <select id="input3" class="form-control" ng-model="filterUs.user.rol">
-                            <option value="">Todos los roles</option>
-                            <option ng-repeat="item in roles" value="{{item.id}}">{{item.name}}</option>
-                        </select>
+                        <input type="text" class="form-control" id="input1" ng-model="filterUs" placeholder="Nombre, apellidos, proyecto,...">
                     </td>
                 </tr>
             </div>
@@ -40,7 +23,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="us in users | filter: filterUs ">
+                    <tr ng-repeat="us in users | filter: filterUs | orderBy:'rol.name'">
                         <td class="td-bordered">
                             <img data-ng-src="images/{{us.user.name}}.jpg" height="100" width="70"/>
                         </td>
