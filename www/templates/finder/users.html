@@ -1,0 +1,57 @@
+<section id="users">
+    <div class="col-md-8 col-md-offset-2">
+        <h3 style="text-align: center; margin-top: 40px;">DIRECTORIO DE USUARIOS</h3>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <tr>
+                    <!--Buscar por nombre-->
+                    <td>
+                        <label for="input1" class="col-sm-4 control-label">Usuarios</label>
+                        <input type="text" class="form-control" id="input1" ng-model="nameFilter" placeholder="Search...">
+                    </td>
+                    <!-- Buscar por proyecto -->
+                    <td>
+                        <label for="input2" class="col-sm-4 control-label">Proyecto Actual</label>
+                        <select id="input2" class="form-control" ng-model="filterUs.proyects"><!--filterUs.proyects[0].name-->
+                            <option value="">Todos los proyectos</option>
+                            <option ng-repeat="item in proyectos" value="{{item.id}}">{{item.name}}</option>
+                        </select>
+                    </td>
+                    <!-- Buscar por rol -->
+                    <td>
+                        <label for="input3" class="col-sm-4 control-label">Rol</label>
+                        <select id="input3" class="form-control" ng-model="filterUs.rol">
+                            <option value="">Todos los roles</option>
+                            <option ng-repeat="item in roles" value="{{item.id}}">{{item.name}}</option>
+                        </select>
+                    </td>
+                </tr>
+            </div>
+        </form>
+        </br></br>
+        <div>
+            <table class="table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <td class="td-bordered"></td>
+                        <td class="td-bordered"><b>Nombre</b></td>
+                        <td class="td-bordered"><b>Proyecto Actual</b></td>
+                        <td class="td-bordered"><b>Rol</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="us in users | filter: filterUs">
+                        <td class="td-bordered">
+                            <img src="images/{{us.user.name}}.jpg" height="100" width="70"/>
+                        </td>
+                        <td class="td-bordered">
+                            <a href="#/users/{{us.id}}">{{us.user.name}} {{us.user.surname}}</a>
+                        </td>
+                        <td class="td-bordered">{{us.proyects[0].name.name}}</td>
+                        <td class="td-bordered">{{us.rol.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

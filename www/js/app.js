@@ -1,15 +1,17 @@
 var beef = angular.module('beefound', [
     'ngRoute',
     'ngCookies',
-    'oc.lazyLoad'
+    'oc.lazyLoad',
+    'tweetsController',
+    'finderController'
 ]);
 
 
 beef.config(function($routeProvider) {
     $routeProvider.
         when('/', {
-            templateUrl:'templates/login.html',
-            controller: 'homeLogin',
+            templateUrl:'templates/finder/users.html',
+            controller: 'FinderController',
             reloadOnSearch: false
         })
         .when('/twitter', {

@@ -1,0 +1,44 @@
+<section id="user">
+    <h3 style="text-align: center">INFORMACIÓN DEL USUARIO</h3>
+    <div class="user-info">
+        <table width="500">
+            <tr>
+                <td><img ng-show="user" src="images/{{user.user.name}}.jpg" height="150" width="100"/></td>
+                <td style="text-align: left">
+                    - <b>Nombre: </b>{{user.user.name}} {{user.user.surname}}</br>
+                    - <b>Cargo: </b>{{user.rol.name}}   <br/>
+                    - <b>Proyecto: </b>{{user.proyects[0].name.name}}<br/>
+                    - <b>Teléfono: </b>{{user.telefono}}<br/>
+                    - <b>E-mail: </b>{{user.email}}<br/>
+                    - <b>Página: </b><a href="{{user.url}}" target="_blank">Beeva</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </br>
+    <div class="main-content">
+        <table class="result-table table-bordered" style="width:100%">
+            <thead>
+                <tr><th colspan="5">LISTADO DE PROYECTOS</th></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="td-bordered"><b>Proyecto</b></td>
+                    <td class="td-bordered"><b>Rol</b></td>
+                    <td class="td-bordered"><b>Año</b></td>
+                    <td class="td-bordered"><b>Lenguaje</b></td>
+                    <td class="td-bordered"><b>Info</b></td>
+                </tr>
+                <tr ng-repeat="proyect in user.proyects">
+                    <td class="td-bordered">{{proyect.name.name}}</td>
+                    <td class="td-bordered">{{proyect.rol.name}}</td>
+                    <td class="td-bordered">{{proyect.year}}</td>
+                    <td class="td-bordered">{{proyect.name.lenguaje}}</td>
+                    <td class="td-bordered">{{proyect.name.info}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <a href="./#/users"><- Volver a Directorio</a>
+
+</section>
