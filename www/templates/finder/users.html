@@ -1,0 +1,40 @@
+<section id="users">
+    <div class="col-md-8 col-md-offset-2">
+        <h3 style="text-align: center; margin-top: 40px;">DIRECTORIO DE USUARIOS</h3>
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <tr>
+                    <td>
+                        <label for="input1" class="col-sm-4 control-label">Usuarios</label>
+                        <input type="text" class="form-control" id="input1" ng-model="filterUs" placeholder="Nombre, apellidos, proyecto,...">
+                    </td>
+                </tr>
+            </div>
+        </form>
+        </br></br>
+        <div>
+            <table class="table-bordered" style="width:100%">
+                <thead>
+                    <tr>
+                        <td class="td-bordered"></td>
+                        <td class="td-bordered"><b>Nombre</b></td>
+                        <td class="td-bordered"><b>Proyecto Actual</b></td>
+                        <td class="td-bordered"><b>Rol</b></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="us in users | filter: filterUs | orderBy:'rol.name'">
+                        <td class="td-bordered">
+                            <img data-ng-src="images/{{us.user.name}}.jpg" height="100" width="70"/>
+                        </td>
+                        <td class="td-bordered">
+                            <a href="#/finder/user/{{us.id}}">{{us.user.name}} {{us.user.surname}}</a>
+                        </td>
+                        <td class="td-bordered">{{us.proyects[0].name.name}}</td>
+                        <td class="td-bordered">{{us.rol.name}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
