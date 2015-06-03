@@ -1,7 +1,6 @@
 var beef = angular.module('beefound', [
     'ngRoute',
-    'ngCookies',
-    'oc.lazyLoad'
+    'tweetsController'
 ]);
 
 
