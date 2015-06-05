@@ -4,7 +4,8 @@ var beef = angular.module('beefound', [
     'tweetsController',
     'finderController',
     'blogController',
-    'navbarController'
+    'navbarController',
+    'ngSanitize'
 ]);
 
 

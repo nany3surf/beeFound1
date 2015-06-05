@@ -7,7 +7,7 @@
     "slug" : "asi-ha-sido-2014-para-beeva",
     "image" : "http://www.beeva.com/wp-content/uploads/2014/12/xmas-2014-2015.jpg",
     "date" : "2014-12-23T16:26:04+00:00",
-    "content" : "Es imposible que os resumamos en unas líneas todo este año en BEEVA, pero hemos conseguido sacar los 10 hitos más significativos que hemos vivido en este año que acaba."
+    "content" : "<section><p>Es imposible que os resumamos en unas líneas todo este año en BEEVA, pero hemos conseguido sacar los 10 hitos más significativos que hemos vivido en este año que acaba.</p></section>"
 
   },
   {
@@ -18,7 +18,19 @@
     "slug" : "lifelong-learning",
     "image" : "http://www.beeva.com/wp-content/uploads/2015/06/BEEVA-moocs-it.jpg",
     "date" : "2015-06-01T11:09:14+00:00",
-    "content" : "No cabe duda que el aprendizaje continuo debe ser parte integral de nuestra actividad profesional como de nuestra vida y, en particular, en nuestra área de trabajo donde la adopción y aplicación de nuevas tecnologías va cada vez a mayor velocidad."
+    "content" : "<section><p>No cabe duda que el aprendizaje continuo debe ser parte integral de nuestra actividad profesional como de nuestra vida y, en particular, en nuestra área de trabajo donde la adopción y aplicación de nuevas tecnologías va cada vez a mayor velocidad.</p></section>"
+
+  }
+  ,
+  {
+    "id" : "3",
+    "url" : "http://www.beeva.com/beeva-view/estrategia-negocio/como-el-big-data-permite-mejorar-tus-finanzas-personales/",
+    "title" : "Cómo el Big Data permite mejorar tus finanzas personales",
+    "author" : "Raúl García",
+    "slug" : "como-el-big-data-permite-mejorar-tus-finanzas-personales",
+    "image" : "http://www.beeva.com/wp-content/uploads/2015/05/BEEVA-Personal-Financial-Management.jpg",
+    "date" : "2015-05-26T10:17:20+00:00",
+    "content" : "<section><p>Para llegar a comprender qué es <strong>PFM</strong> (<em>Personal Financial Management</em>) es necesario repasar el término <strong>Big Data</strong>. El Big Data nace por la necesidad de tratar de una forma útil las ingentes cantidades de datos que se encontraban almacenadas a lo largo de años. Y cuando hablamos de ingentes cantidades de datos quizás nos estemos quedando cortos, ya que hoy por hoy, al día se está generando alrededor de 2,5 quintillones de bytes en el mundo.</p><p style=\"text-align: center;\">1 quintillón = 1 x 1030 = 1,000,000,000,000,000,000,000,000,000,000</p></section>"
 
   }
 ]
