@@ -53,11 +53,21 @@
                 </div>
 
                 <div class="collapse navbar-collapse menu-sdr">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#/finder">Finder <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#/blog">Blog</a></li>
-                        <li><a href="#/intranet">Intranet</a></li>
-                        <li><a href="#/twitter">Twitter</a></li>
+                    <ul class="nav navbar-nav" ng-controller="navbarController">
+                        <li ng-class="{ active: isActive('/finder') }">
+                            <a href="#/finder">Finder
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li ng-class="{ active: isActive('/blog') }">
+                            <a href="#/blog">Blog</a>
+                        </li>
+                        <li ng-class="{ active: isActive('/intranet') }">
+                            <a href="#/intranet">Intranet</a>
+                        </li>
+                        <li ng-class="{ active: isActive('/twitter') }">
+                            <a href="#/twitter">Twitter</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -75,6 +85,7 @@
     <script src="js/lib/angular-route.min.js"></script>
     <script src="js/lib/jquery.touchSwipe.min.js"></script>
     <script src="js/services/services.js"></script>
+    <script src="js/controllers/navbar/controllers.js"></script>
     <script src="js/controllers/finder/controllers.js"></script>
     <script src="js/controllers/blog/controllers.js"></script>
     <script src="js/controllers/intranet/controllers.js"></script>

@@ -3,7 +3,8 @@ var beef = angular.module('beefound', [
     'BEEFound.services.Users',
     'tweetsController',
     'finderController',
-    'blogController'
+    'blogController',
+    'navbarController'
 ]);
 
 
