@@ -8,17 +8,21 @@ angular.module('blogController', [])
 
         $scope.go = function(slug) {
             $location.path('/blog/' + slug);
-        }
+        };
+
+        $scope.slugify = function(input) {
+            $scope.mySlug = Slug.slugify(input);
+        };
 
     })
-    .controller('blogContentController', function($scope, $routeParams , $http) {
+    .controller('blogContentController', function($scope, $routeParams , $http , Slug) {
             $scope.blogSlug = $routeParams.slug;
             $scope.blog = [];
 
             $http.get('templates/blog/data.json')
                 .success(function(data) {
                     angular.forEach(data , function(value , key) {
-                        if (value['slug'] == $scope.blogSlug) {
+                        if (Slug.slugify(value['slug']) == $scope.blogSlug) {
                             $scope.blog = value
                         }
                     });

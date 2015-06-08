@@ -48,12 +48,15 @@
 <section ng-controller="blogController">
     <h1>Blog</h1>
     <hr/>
+    <!--
     <div class="col-sm-4" ng-repeat="blog in blogs" style="margin-bottom: 1%;cursor: pointer;" ng-click="go(blog.slug)">
+    -->
+    <div class="col-sm-4" ng-repeat="blog in blogs" style="margin-bottom: 1%;cursor: pointer;">
         <div class="card">
 
             <canvas class="header-bg" style="background-image: url({{blog.image}});background-size: 100% 100%;"></canvas>
             <div class="avatar">
-                <h4><a href="#/blog/{{blog.slug}}" title="{{blog.title}}">{{blog.title}}</a></h4>
+                <h4><a href="#/blog/{{blog.slug | slugify}}" title="{{blog.title}}">{{blog.title}}</a></h4>
             </div>
             <div class="content" ng-bind-html="blog.content | limitTo:180"></div>
             <div class="text-center datepost">
