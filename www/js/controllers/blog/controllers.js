@@ -16,16 +16,15 @@ angular.module('blogController', [])
 
     })
     .controller('blogContentController', function($scope, $routeParams , $http , Slug) {
-            $scope.blogSlug = $routeParams.slug;
-            $scope.blog = [];
+        $scope.blogSlug = $routeParams.slug;
+        $scope.blog = [];
 
-            $http.get('templates/blog/data.json')
-                .success(function(data) {
-                    angular.forEach(data , function(value , key) {
-                        if (Slug.slugify(value['slug']) == $scope.blogSlug) {
-                            $scope.blog = value
-                        }
-                    });
+        $http.get('templates/blog/data.json')
+            .success(function(data) {
+                angular.forEach(data , function(value , key) {
+                    if (Slug.slugify(value['slug']) == $scope.blogSlug) {
+                        $scope.blog = value
+                    }
                 });
-
+            });
     });
