@@ -1,5 +1,5 @@
 angular.module('blogController', [])
-    .controller('blogController' , function($scope , $http , $location) {
+    .controller('blogController' , function($scope , $http , $location , Slug) {
         $http.get('templates/blog/data.json')
             .success(function(data) {
                 $scope.blogs = data
@@ -7,7 +7,7 @@ angular.module('blogController', [])
             });
 
         $scope.go = function(slug) {
-            $location.path('/blog/' + slug);
+            $location.path('/blog/' + Slug.slugify(slug));
         };
 
         $scope.slugify = function(input) {

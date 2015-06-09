@@ -6,7 +6,8 @@ var beef = angular.module('beefound', [
     'blogController',
     'navbarController',
     'ngSanitize',
-    'slugifier'
+    'slugifier',
+    'truncate'
 ]);
 
 
