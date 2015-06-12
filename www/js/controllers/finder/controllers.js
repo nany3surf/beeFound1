@@ -1,5 +1,5 @@
 angular.module('finderController', [])
-    .controller('FinderController', function($scope, userService) {
+    .controller('FinderController', function ($scope, userService) {
         $scope.users = userService.getUsers();
         $scope.proyectos = userService.getProyects();
         $scope.roles = userService.getRoles();
