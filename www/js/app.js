@@ -1,10 +1,14 @@
 var beef = angular.module('beefound', [
     'ngRoute',
-    /*'BEEFound.services.googleApi',*/
     'BEEFound.services.Users',
     'tweetsController',
     'finderController',
-    'loginController'
+    'loginController',
+    'blogController',
+    'navbarController',
+    'ngSanitize',
+    'slugifier',
+    'truncate'
 ]);
 
 
@@ -31,7 +35,15 @@ beef.config(function($routeProvider) {
         })
         .when('/login', {
             /*templateUrl:'templates/login/login.html',*/
-            controller : 'LoginController'
+            controller: 'loginController'
+        })
+        .when('/blog', {
+            templateUrl:'templates/blog/blog.html',
+            controller : 'blogController'
+        })
+        .when('/blog/:slug', {
+            templateUrl:'templates/blog/blog_content.html',
+            controller : 'blogContentController'
         })
         .otherwise({
             redirectTo: '/finder'

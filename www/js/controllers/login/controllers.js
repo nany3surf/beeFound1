@@ -8,25 +8,23 @@ angular.module('loginController', ["BEEFound.services.Authentication"])
             scopes: ["https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/plus.login", "https://www.googleapis.com/auth/calendar"]
         });
     })
-    .controller('LoginController', function($scope, googleLogin, googlePlus) {
+    .controller('loginController', function($scope, googleLogin, googlePlus) {
 
         // This flag we use to show or hide the button in our HTML.
         $scope.signedIn = false;
         $scope.message = null;
         $scope.currentUser = '';
 
-        $scope.clickMe = function(clickEvent) {
-            $scope.value = googleLogin.login();
-            console.log($scope.value);
-            if ($scope.value.$$state.status == 0){
-                $scope.signedIn = true;
-                $scope.message = null;
-            }
-            else{
-                $scope.signedIn = false;
-                $scope.message = "An error has ocurred while signing in.";
-            }
-        };
+        $scope.value = googleLogin.login();
+        console.log($scope.value);
+        if ($scope.value.$$state.status == 0){
+            $scope.signedIn = true;
+            $scope.message = null;
+        }
+        else{
+            $scope.signedIn = false;
+            $scope.message = "An error has ocurred while signing in.";
+        }
 
         $scope.$on("googlePlus:loaded", function() {
             googlePlus.getCurrentUser().then(function(userInfo) {
