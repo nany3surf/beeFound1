@@ -34,7 +34,7 @@ beef.config(function($routeProvider) {
             controller : 'tweetsController'
         })
         .when('/login', {
-            /*templateUrl:'templates/login/login.html',*/
+            templateUrl:'templates/login/login.html',
             controller: 'loginController'
         })
         .when('/blog', {
